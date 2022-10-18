@@ -1,0 +1,126 @@
+@import url(https://https://fonts.googleapis.com/css2?family=Poppins%3Awght%40300%3B400&family=Roboto%3Awght%40700&family=Rubik%3Aital%2Cwght%400%2C400%3B1%2C300%3B1%2C400&display=swap%27%29%3B);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(90deg, #818274 , #BDE038 );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+    min-height: 440px;
+    max-height: 500px;
+}
+
+header h1 {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #042940;
+    font-size: 64px;
+    margin-left: 50px;
+}
+ main{
+    margin: auto;
+    width: 85%;
+    height: 70%;
+ }
+
+ main form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+ }
+
+ .input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 55px;
+    width: 380px;
+    border: 2px solid #F2E7DC;
+    flex-direction: row-reverse;
+ }
+ .input-field:hover{
+    border: 2px solid #F2E7DC;
+ } 
+
+ .input-field input {
+    border: none;
+    outline: none;
+    background:#F2E7DC;
+    width: 82%;
+    height: 55px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 0 8px 8px 0;
+    transition: 1s;
+ } 
+
+ ::-webkit-input-placeholder {
+    color: #5C7373;
+    font-weight: 300;
+ }
+
+ .input-field label {
+    height: 55px;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .input-field label img {
+    width: 33px;
+    height: 33px;
+ }
+
+ form button {
+    height: 55px;
+    width: 380px;
+    background-color: #011F26;
+    border: none;
+    border-radius:10px ;
+    color: #F2E7DC;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: "Rubik";
+ }
+
+.content footer {
+    
+    margin: auto;
+    width: 115%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: #F2E7DC;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Rubik";
+    font-style: italic;
+} 
+.logoterminal{
+
+   border-radius: 50%;
+   margin-left: 180px;
+}
