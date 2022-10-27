@@ -22,6 +22,8 @@ if($email == $email_ger){
     }
 }
    
+
+
 if(isset($entrar)){
     if(empty($_SESSION['token_auth'])){
         if ($result->num_rows > 0) {
@@ -36,42 +38,20 @@ if(isset($entrar)){
                 $_SESSION['token_auth'] = $email;
                 header("location: ../view/cadastrado.php");
             }else{
-?>
-
-                <div>
-                    <p>Email e/ou senha incorretas</p>
-                    <a href="../view/login.php">Tente fazer login novamente</a>
-                </div>
-
-<?php
+                $_SESSION['verif_erro'] = 'error';
+                header('location: ../view/login.php');
             }
         }else{
-?>
-
-            <div>
-                <p>Usuário não encontrado.</p>
-                <a href="../view/login.php">Tente fazer login novamente</a>
-            </div>
-
-<?php
+            $_SESSION['verif_erro2'] = 'error';
+            header('location: ../view/login.php');
         }
     }else{
-?>
-
-        <div>
-            <p>Você já fez login. Saia para dessa conta e faça o login novamente.</p>
-            <a href="../view/home.php">Pagina Inicial</a>
-        </div>
-
-<?php
+        $_SESSION['verif_erro3'] = 'error';
+        header('location: ../view/login.php');
     }
 }else{
-?>
-
-    <div>
-        <p>Cadastrar</p>
-        <a href="../view/cadastrar.php"></a>
-    </div>
-<?php
+    $_SESSION['verif_erro4'] = 'error';
+    header('location: ../view/login.php');
 }
-?>
+
+        ?>
