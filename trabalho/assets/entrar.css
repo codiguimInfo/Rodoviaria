@@ -1,4 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+div {
+    position: relative;
+    width: 100%;
+    
+}
+h2{
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+
+}
+input {
+    border-radius: 0;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.lnr-eye {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;    
+}
 
 * {
     margin: 0;
@@ -16,9 +42,8 @@ body {
     min-height: 100vh;
     min-width: 100vw;
 }
-
 main {
-    width: 50vw;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,6 +66,7 @@ main form {
 main form label {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 main form label span {
